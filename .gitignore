@@ -1,0 +1,57 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Log files
+*.log
+
+# Build output
+dist/
+build/
+out/
+
+# Node.js dependencies
+node_modules
+
+# Environment files
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.cursorrules
+.cursorignore
+
+# Coverage reports
+coverage/
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.orig
+*~
+
+# Bun
+apps/studio/resources/bun/bun.exe
+bun.exe
