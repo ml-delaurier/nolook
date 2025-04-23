@@ -83,10 +83,42 @@ Onlook officially launched our first version of Onlook on July 08, 2024 and we'v
 
 ![image](https://github.com/user-attachments/assets/18b6ad5a-1d5a-4396-af8c-8b85936acf39)
 
-### Installation
+## Local Development Setup (All Platforms)
 
- 1. Visit [onlook.com](https://onlook.com/) to download the app.
- 2. Run locally following [this guide](https://github.com/onlook-dev/onlook/wiki/Building-from-source)
+Onlook Studio now supports a unified, automated setup for both Unix/macOS/Linux and Windows users. Build artifacts are generated locally and are not committed to git.
+
+### Quick Start
+
+#### For Unix/macOS/Linux:
+
+```bash
+bash setup.sh
+```
+
+#### For Windows (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
+```
+
+These scripts will:
+- Check for and install Bun if needed
+- Install all dependencies
+- Download the Bun runtime for Electron
+- Warn if `.env` is missing (see `.env.example` for required variables)
+- Build the project
+- Patch authentication for local development (if needed)
+
+After setup completes, launch Onlook Studio:
+
+```bash
+cd apps/studio
+bun dev
+```
+
+### Notes
+- Build outputs (e.g., `dist/`, `build/`, `apps/studio/dist-electron/`) are .gitignored and must be generated locally.
+- If you encounter issues, see the setup scripts for troubleshooting steps or reach out via GitHub Issues or Discord.
 
 ### Usage
 

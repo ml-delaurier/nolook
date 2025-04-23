@@ -54,6 +54,10 @@ $RECYCLE.BIN/
 
 # Ignore local environment variables
 apps/studio/.env
+# Ignore build artifacts
+dist/
+build/
+apps/studio/dist-electron/
 
 apps/studio/resources/bun/bun.exe
 bun.exe
